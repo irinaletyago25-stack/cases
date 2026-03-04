@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Index Page</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="images/image.png" alt="Image description">
-        <p>This is a brief introduction about myself.</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 My Website</p>
-    </footer>
-</body>
-</html>
+<h2>Что обо мне говорят нейросети</h2>
+<div class="ai-reviews">
+    <div class="review-card">
+        <img src="image1_url.jpg" alt="AI Review 1">
+    </div>
+    <div class="review-card">
+        <img src="image2_url.jpg" alt="AI Review 2">
+    </div>
+    <div class="review-card">
+        <img src="image3_url.jpg" alt="AI Review 3">
+    </div>
+    <div class="review-card">
+        <img src="image4_url.jpg" alt="AI Review 4">
+    </div>
+</div>
+<style>
+    .ai-reviews {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .review-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    .review-card img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
